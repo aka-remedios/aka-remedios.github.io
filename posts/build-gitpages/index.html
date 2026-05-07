@@ -213,7 +213,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "799"
+    "wordCount": "1059"
   }]
   </script>
 
@@ -567,7 +567,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-05-07T23:37:43&#43;08:00">2026 年 5 月 7 日</time><span class="px-2 text-primary-500">&middot;</span><span>799 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+      <time datetime="2026-05-07T23:37:43&#43;08:00">2026 年 5 月 7 日</time><span class="px-2 text-primary-500">&middot;</span><span>1059 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
     
 
     
@@ -629,7 +629,14 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <p>现在终于把博客搭好了，第一件事就是记录下整个搭建过程，尤其是那些折腾了我很久的坑。</p>
+          <p>二编，下面是结合了deepseek的表述，有着很严重的误导性。</p>
+<p>这里hugo的用法就是要对生成的public文件夹进行版本管理并且直接同步到github中的，每一次提交都会自动触发部署。</p>
+<p>他的本质还是直接显示静态文件，直接上传整个项目会让他找不到静态资源。</p>
+<p>我也被很严重的误导了（从现在时间可以看出来。。。）</p>
+<p>另外，经过我的测试，重复运行<code>hugo</code>命令（也就是重复生成public文件夹并不会清除原有的内容，.github文件夹不会被删除，进行版本管理的.git也不会被删除，他是增量覆盖，旧文件他不会管）</p>
+<p>因此下面第三节的内容存疑</p>
+<hr>
+<p>现在终于把博客搭好了，第一件事就是记录下整个搭建过程，尤其是那些折腾了我很久的坑。</p>
 <p>主要参考的教程：<a href="https://www.hetong-re4per.com/posts/how-bulid-blog-on-github-page/"  target="_blank" rel="noreferrer">如何使用 Github Page 搭建自己的博客</a></p>
 <p>官方文档：<a href="https://docs.github.com/zh/pages"  target="_blank" rel="noreferrer">GitHub Pages documentation</a></p>
 
